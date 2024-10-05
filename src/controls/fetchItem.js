@@ -1,4 +1,9 @@
-'use server'
-export const fetchSpecificItem = async () => {
 
-}
+// server side rendering (SSR)
+"use server";
+
+import item from "@/models/item";
+export const fetchALLItem = async () => {
+  const data = await item.find({});
+  return data;
+};

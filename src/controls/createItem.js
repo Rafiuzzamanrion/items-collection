@@ -3,7 +3,7 @@
 import connectToDatabase from "@/lib/mongoose";
 import { itemSchema } from "@/lib/validation";
 import item from "@/models/item";
-import { NextResponse } from "next/server";
+
 
 export const createItem = async (formData) => {
   const name = formData.name;
@@ -12,6 +12,8 @@ export const createItem = async (formData) => {
   const data = { name, description, isCompleted };
 
   try {
+    
+    // verified with zod and throw an error
     const parsed = itemSchema.safeParse(data);
     if (!parsed) {
       return { errors: parsed.error.errors };
