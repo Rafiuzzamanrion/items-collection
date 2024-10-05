@@ -12,11 +12,6 @@ const ItemSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    isCompleted:{
-      type: String,
-      required: true
-      
-    }
   },
   {
     timestamps: true,

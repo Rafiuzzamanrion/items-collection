@@ -30,26 +30,7 @@ const NavBar = () => {
           >
             <Link href={"/createItem"}>Create Item</Link>
           </li>
-          <li
-            className={`
-        ${
-          isActive("/incompleteItem")
-           ? "text-black font-bold border-b-2 border-black"
-            : "text-gray-500 border-b-2 border-gray-400 hover:border-black hover:border-b-2 hover:text-black"
-        }`}
-          >
-            <Link href={"/incompleteItem"}>Incomplete Item</Link>
-          </li>
-          <li
-            className={`
-        ${
-          isActive("/completedItem")
-           ? "text-black font-bold border-b-2 border-black"
-            : "text-gray-500 border-b-2 border-gray-400 hover:border-black hover:border-b-2 hover:text-black"
-        }`}
-          >
-            <Link href={"/completedItem"}>Completed Item</Link>
-          </li>
+         
         </ul>
       </nav>
     </div>

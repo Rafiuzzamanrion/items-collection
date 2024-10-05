@@ -31,7 +31,7 @@ const CreateItem = () => {
     if (res.status) {
       toast.success("Item has been created successfully!", {
         position: "top-center",
-        autoClose: 2000,
+        autoClose: 1500,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -44,7 +44,7 @@ const CreateItem = () => {
     if (res.error) {
         toast.error("Item has not been created!", {
             position: "top-center",
-            autoClose: 2000,
+            autoClose: 1500,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
