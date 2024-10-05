@@ -2,24 +2,25 @@
 
 import mongoose from "mongoose";
 
-
 const ItemSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: [true, 'Name is required'],
-      trim: true,
+      required: true,
     },
     description: {
       type: String,
-      required: [true, 'Description is required'],
-      trim: true,
+      required: true,
     },
+    isCompleted:{
+      type: String,
+      required: true
+      
+    }
   },
   {
     timestamps: true,
   }
 );
 
-
-export default mongoose.models.Item || mongoose.model('Item', ItemSchema);
+export default mongoose.models.Item || mongoose.model("Item", ItemSchema);

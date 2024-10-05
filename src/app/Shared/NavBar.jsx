@@ -23,7 +23,7 @@ const NavBar = () => {
           <li
             className={`
         ${
-          isActive("/completed")
+          isActive("/createItem")
             ? "text-black font-bold border-b-2 border-black"
             : "text-gray-500 border-b-2 border-gray-400 hover:border-black hover:border-b-2 hover:text-black"
         }`}
@@ -34,21 +34,21 @@ const NavBar = () => {
             className={`
         ${
           isActive("/incompleteItem")
-            ? "text-black font-bold border-b-2 border-black"
+           ? "text-black font-bold border-b-2 border-black"
             : "text-gray-500 border-b-2 border-gray-400 hover:border-black hover:border-b-2 hover:text-black"
         }`}
           >
-            <Link href={"/"}>Incomplete Item</Link>
+            <Link href={"/incompleteItem"}>Incomplete Item</Link>
           </li>
           <li
             className={`
         ${
           isActive("/completedItem")
-            ? "text-black font-bold border-b-2 border-black"
+           ? "text-black font-bold border-b-2 border-black"
             : "text-gray-500 border-b-2 border-gray-400 hover:border-black hover:border-b-2 hover:text-black"
         }`}
           >
-            <Link href={"/"}>Completed Item</Link>
+            <Link href={"/completedItem"}>Completed Item</Link>
           </li>
         </ul>
       </nav>
