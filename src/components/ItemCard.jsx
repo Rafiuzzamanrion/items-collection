@@ -101,14 +101,14 @@ const ItemCard = ({ data }) => {
           <CardTitle>{name}</CardTitle>
         </CardHeader>
         <CardContent>
-          <h1>{description}</h1>
+          <h1 className="mb-5">{description}</h1>
           <h1>Time: {new Date(createdAt).toLocaleString()}</h1>
         </CardContent>
         <CardFooter className="flex justify-between">
           <Dialog>
             <DialogTrigger asChild>
               <Button variant="outline">
-                Update
+                Update Item
               </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[425px]">
